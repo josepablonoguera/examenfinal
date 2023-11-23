@@ -10,8 +10,10 @@ import ejercicio3.Ejercicio3;
 import ejercicio4.Ejercicio4;
 import ejercicio5.Ejercicio5;
 import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import utils.i2ascii;
 
 public class ExamenFinal {
 
@@ -25,11 +27,12 @@ public class ExamenFinal {
     }
 
     public static void main(String[] args) throws IOException {
+        
         menu();
     }
 
     /**
-     * Método principal que muestra el menú de ejercicios, permite al usuario
+     * Método principal que muestra el menú de ejercicios, permite al estudiante
      * seleccionar una opción y ejecuta la función correspondiente al ejercicio
      * seleccionado.
      *
@@ -37,17 +40,26 @@ public class ExamenFinal {
      * caso).
      */
     public static void menu() throws IOException, NumberFormatException {
+        
+        i2ascii img = new i2ascii();
+        String data = img.ConvertToAscii();
+        System.out.println(data);
+        
+        
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int opcion = 0;
-
-        System.out.println("=== Menú de Ejercicios ===");
-        System.out.println("1. Recursividad - N-ésimo término de Fibonacci");
+        
+        System.out.println("\nExamen II === Menú de Ejercicios ===");
+        System.out.println("1. Recursividad - N-ésimo término de Fibonacci [5 pts]");
         System.out.println("2. Manejo Dinámico de la Memoria - Registro de"
-                + " Clientes");
-        System.out.println("3. Archivos - Valor total del Inventario");
+                + " Clientes [5 pts]");
+        System.out.println("3. Archivos - Valor total del Inventario [5 pts]");
         System.out.println("4. Polimorfismo, Herencia y Clases Abstractas -"
-                + " Vehículos");
-        System.out.println("5. Interfaces - Conexión de Red");
+                + " Vehículos [5 pts]");
+        System.out.println("5. Interfaces - Conexión de Red [5 pts]\n");
+        System.out.println("Nota: Las preguntas estan en el paquete preguntasteoria con su puntaje respectivo.");
+        System.out.println("Total puntos examen: 25pts( Código) y 12pts (Téoria) para untotal de 37 pts\n");
+        System.out.println("6. Instrucciones del examen");
         System.out.println("0. Salir");
         System.out.print("Seleccione una opción: ");
 
@@ -91,6 +103,11 @@ public class ExamenFinal {
                 ej5.probarConexionRed();
                  menu();
                 break;
+                
+                 case 6:
+                  instruccionesDeExamen("instrucciones.txt");
+                 menu();
+                break;
 
             case 0:
                 System.out.println("Saliendo del programa. ¡Hasta luego!");
@@ -104,5 +121,14 @@ public class ExamenFinal {
         br.close();
     }
 
-    // Métodos de los ejercicios
+      public static void instruccionesDeExamen(String nombreArchivo) {
+        try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo))) {
+            String linea;           
+            while ((linea = br.readLine()) != null) {
+                System.out.println(linea);
+            }
+        } catch (IOException e) {
+            System.err.println("Error al leer el archivo: " + e.getMessage());
+        }
+    }
 }

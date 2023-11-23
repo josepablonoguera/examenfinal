@@ -1,0 +1,33 @@
+Instrucciones Generales:
+
+1. Inicio del Examen:
+   - Inicie sesión en su PC, en dado caso puede hacerlo en un PC del Lab.
+   - Asegúrese de tener acceso a un entorno de desarrollo Java, preferiblemente con un IDE como Netbeans.
+   - Clone el repositorio indicado por el profesor.
+
+2. Duración del Examen:
+   - El tiempo total asignado para esta sección del examen es de 3 horas.
+   - Administre su tiempo sabiamente para completar todas las preguntas.
+
+3. Formato de Respuesta:
+   - Para cada pregunta, escriba su respuesta en el espacio proporcionado según las indicaciones del profesor.
+   - Utilice un lenguaje claro y preciso en sus respuestas.
+
+4. Código Fuente: 
+   - Utilice el lenguaje de programación Java.
+   - Documente claramente cada sección de código y proporcione comentarios si es necesario.
+
+5. Subida de Archivos:
+   - Si se le pide adjuntar archivos (por ejemplo, programas Java), asegúrese de cargar todos los archivos necesarios.
+   - Asegúrese de que los archivos estén correctamente etiquetados y organizados.
+
+6. Guardado Frecuente:
+   - Guarde su progreso regularmente para evitar pérdida de datos en caso de problemas técnicos.
+
+7. Ética y Plagio:
+   - Responda de manera honesta y original. El plagio o el uso no ético de material está estrictamente prohibido.
+  
+
+8. Finalización del Examen:
+   - Asegúrese de enviar todas sus respuestas antes de que finalice el tiempo asignado.
+   - Revise cuidadosamente su trabajo antes de enviar para corregir posibles errores.
