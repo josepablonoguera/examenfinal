@@ -41,16 +41,16 @@ public class ExamenFinal {
      */
     public static void menu() throws IOException, NumberFormatException {
         
-        i2ascii img = new i2ascii();
+       /* i2ascii img = new i2ascii();
         String data = img.ConvertToAscii();
-        System.out.println(data);
+        System.out.println(data);*/
         
         
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int opcion = 0;
         
         System.out.println("\nExamen II === Menú de Ejercicios ===");
-        System.out.println("1. Recursividad - N-ésimo término de Fibonacci [5 pts]");
+        System.out.println("1. Recursividad - Busqueda binaria [5 pts]");
         System.out.println("2. Manejo Dinámico de la Memoria - Registro de"
                 + " Clientes [5 pts]");
         System.out.println("3. Archivos - Valor total del Inventario [5 pts]");
@@ -75,7 +75,7 @@ public class ExamenFinal {
         switch (opcion) {
             case 1:
                 // Ejercicio de Recursividad
-               ej1.calcularFibonacci();
+               ej1.binaria();
                  menu();
                 break;
 
