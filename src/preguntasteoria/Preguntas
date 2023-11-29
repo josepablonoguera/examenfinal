@@ -1,28 +1,50 @@
 
 Parte 1. Desarollo téorico. 12 pts
 
-Lista de Preguntas Seleccione 4 de ellas unicamente.
 
-1. [3 pts] ¿Qué es la herencia en Java y cómo se implementa? 
-Proporcione un ejemplo práctico de una clase que hereda de otra, 
-y explica la relación entre la clase padre e hija.
+1. [3 pts] Según la siguiente función, determine la cantidad de bytes
+           se necesitan reservar en memoria para su ejecución.
+
+
+
+public static int sumaDiagonalPrimaria(int matriz[][]) {
+
+        int suma = 0;
+
+
+
+        for (int i = 0; i < matriz.length; i++) {
+
+            for (int j = 0; j < matriz[0].length; j++) {
+
+                if (i == j) {
+
+                    suma += matriz[i][j];
+
+                }
+
+            }
+
+        }
+
+        return suma;
+
+    }
 
 R/
 
 
 
 
-2.[3 pts] Explique el concepto de polimorfismo en Java. 
-Proporcione un ejemplo concreto utilizando métodos y explique cómo 
-el polimorfismo facilita el diseño de programas flexibles y extensibles.
+2.[3 pts] Explique que son las clases abstractas y las Interfaces, 
+          describa en que momento de diseño de software se deben emplear 
 
 R/
 
 
 
-3.[3 pts] ¿Cuál es el propósito de una clase abstracta en Java? 
-Proporciona un ejemplo de una clase abstracta y explica cómo se diferencia
- de una clase regular.
+3.[3 pts] ¿Cuál es la diferencia entre un diseño iterativo y el recursivo desde
+         el punto de vista del diseño de un procedimiento por el programador?
 
 R/
 
@@ -35,21 +57,5 @@ Menciona la importancia de manejar excepciones en este contexto.
 
 R/
 
-
-
-5.[3 pts] Explica el concepto de recursividad en Java. 
-Proporciona un ejemplo de una función recursiva y discute cómo funciona,
- así como las precauciones que deben tomarse al utilizar la recursividad.
-
-
-R/
-
-
-
-6.[3 pts] ¿Cómo se gestiona dinámicamente la memoria en Java? 
-Explica cómo Java aborda la liberación de memoria.
-
-
-R/
 
 
