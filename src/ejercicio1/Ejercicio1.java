@@ -11,7 +11,7 @@ package ejercicio1;
 public class Ejercicio1 {
  
     
-    public static void calcularFibonacci() {
+    public static void binaria() {
         System.out.println("");
         System.out.println("Ejercicio 1");
      /* Ejercicio: Búsqueda Binaria Recursiva
